@@ -39,8 +39,7 @@ print("------------------")
 
 print("answers: ", end="")
 for answer in answers:
-    print(answer, end=" ")
-print()
+    print(answer)
 
 print("guesses: ", end="")
 for guess in guesses:

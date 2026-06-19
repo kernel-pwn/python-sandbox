@@ -1,0 +1,62 @@
+import random
+
+# ● ┌ ─ ┐ │ └ ┘
+
+#"┌─────────┐"
+#"│         │"
+#"│         │"
+#"│         │"
+#"└─────────┘"
+
+dice_art = {
+    1: ("┌─────────┐",
+        "│         │",
+        "│    ●    │",
+        "│         │",
+        "└─────────┘"),
+    2: ("┌─────────┐",
+        "│ ●       │",
+        "│         │",
+        "│       ● │",
+        "└─────────┘"),
+    3: ("┌─────────┐",
+        "│ ●       │",
+        "│    ●    │",
+        "│       ● │",
+        "└─────────┘"),
+    4: ("┌─────────┐",
+        "│ ●     ● │",
+        "│         │",
+        "│ ●     ● │",
+        "└─────────┘"),
+    5: ("┌─────────┐",
+        "│ ●     ● │",
+        "│    ●    │",
+        "│ ●     ● │",
+        "└─────────┘"),
+    6: ("┌─────────┐",
+        "│ ●     ● │",
+        "│ ●     ● │",
+        "│ ●     ● │",
+        "└─────────┘")
+}
+
+dices = []
+total = 0
+num_of_dice = int(input("enter the number of dice: "))
+
+for dice in range(num_of_dice):
+    dices.append(random.randint(1, 6))
+
+#for die in range(num_of_dice):
+#    for line in dice_art.get(dice[die]):
+#        print(line)
+
+for line in range(5):
+    for dice in dices:
+        print(dice_art.get(dice)[line], end="")
+    print()
+
+for dice in dices:
+    total += dice
+print(f"total: {total}")
