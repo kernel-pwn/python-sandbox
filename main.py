@@ -1,16 +1,12 @@
-# This is a sample Python script.
+# this script can be imported OR run standalone
+# functions and classes in this module can be reused
+# without the main block of code executing
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# ex. library = import library for functionality
+#               when running library directly, display a help page
 
+def main():
+    print("hello world")    # my program
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
