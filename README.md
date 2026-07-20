@@ -1,4 +1,4 @@
-# python-sandbox — My Python learning notebook
+# python-sandbox — My Python learning notebook.
 
 This repository is my personal place to collect Python things I learn: short examples, exercises, and small projects I build while practicing. It's intentionally informal — code, notes, and experiments live here so I can revisit them later.
 
